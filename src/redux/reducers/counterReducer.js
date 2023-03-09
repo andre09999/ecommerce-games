@@ -11,6 +11,8 @@ const INITIAL_STATE = {
             return {count: 0}
           }
           return { count: state.count - action.payload };  
+          case 'clean1':
+        return { count: 0 };
       default:
         return state;
     }

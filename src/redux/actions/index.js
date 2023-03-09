@@ -8,6 +8,10 @@ export const decre = (decrement = 1)   => ({
   payload: decrement
 })
   
+export const limparClearn = (a) => ({
+  type: 'clean1',
+  payload: a
+})
   export const game = (a) => ({ 
     type: a.id,
     payload: a,
@@ -16,4 +20,9 @@ export const decre = (decrement = 1)   => ({
   export const decrementGame = (a) => ({
     type: a.id+1 ,
     payload: a,
+  })
+
+  export const limpar = (a) => ({
+    type: 'clean',
+    payload: a
   })

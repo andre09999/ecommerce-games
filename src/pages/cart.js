@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { game,decrementGame,decre } from '../redux/actions';
+import { game,decrementGame,decre,limpar,limparClearn } from '../redux/actions';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css'; 
 import '../App.css';
@@ -44,6 +44,13 @@ class cart extends React.Component {
     toast.success(`O jogo ${a.name} foi adicionado no carrinho`)
     dispatch(game(a))
   }
+
+  const clear = (a) => {
+    toast.success(`Carrinho limpo com sucesso`)
+    dispatch(limparClearn(this.state.games))
+    dispatch(limpar(this.state.games))
+  }
+
   return (
     <div className='container'>
         <ToastContainer />
@@ -151,6 +158,7 @@ class cart extends React.Component {
 
      <h2> Total: R$  {( this.state.games.game420?.tot + this.state.games.game31?.tot +  this.state.games.game74?.tot +  this.state.games.game99?.tot + this.state.games.game102?.tot + this.state.games.game501?.tot + this.state.games.game201?.tot+  this.state.games.game312?.tot + this.state.games.game12?.tot).toFixed(2)} </h2>: <h2>Não há nada no carrinho</h2>
          }
+         <button className='butt' onClick={() => clear()}>Limpar carrinho</button>
         </div>
         </div>
   );

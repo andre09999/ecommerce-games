@@ -12,6 +12,8 @@ const INITIAL_STATE = {
   
   function gamers(state = INITIAL_STATE, action) {
     switch (action.type) {
+        case 'clean':
+            return INITIAL_STATE
         case 312:
             return {...state, game312: {
                 count: state.game312.count + 1,
