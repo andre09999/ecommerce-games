@@ -12,7 +12,7 @@ class hpme extends React.Component {
     this.state = ({showmessage: false})
   }
   render( ){
-  const { dispatch, countState } = this.props;
+  const { dispatch } = this.props;
   const dates = (a) => {
     dispatch( actionCreator() )
      dispatch( game(a))

@@ -1,9 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { actionCreator,game,decrementGame,decre } from '../redux/actions';
+import { game,decrementGame,decre } from '../redux/actions';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css'; 
-import inform from '../data/products.json'
 import '../App.css';
 ;
 
@@ -28,7 +27,7 @@ class cart extends React.Component {
 
 
   render( ){
-  const { dispatch, countState, gameState } = this.props;
+  const { dispatch, countState } = this.props;
   const decrement = (a) => {
     this.setState({
       count: this.state.count - 1

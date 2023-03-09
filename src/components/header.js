@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from 'react-redux';
 import '../App.css';
-import { createBrowserHistory } from 'history';
 import Cart from "../pages/cart";
 
 class header extends React.Component {
