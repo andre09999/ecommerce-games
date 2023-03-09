@@ -1,3 +1,6 @@
+### Deploy realizado na netlify para ja verificar rodando copie e cole o URL:
+
+https://ecoomer-game-potencia-tech.netlify.app/
 ### Tenha instalado em seu computador o node e git preferência a ultima versão para rodar este site
 
 ### Faça o download do arquivo em zip:
