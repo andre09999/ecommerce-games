@@ -150,6 +150,10 @@ color: #DBD8A2  ;
   font-weight: bolder;
   font-size: 18px;
 }
+.space{
+  padding: 10px;
+  margin-bottom: 10px ;
+}
 
 .butt:hover{
   background-color: #869791;  
@@ -175,4 +179,5 @@ color: #DBD8A2  ;
   .cart{
     padding: 3px;
   }
+
 }
