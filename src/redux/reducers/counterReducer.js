@@ -7,6 +7,9 @@ const INITIAL_STATE = {
       case 'INCREMENT_COUNTER':
         return { count: state.count + action.payload };
         case 'DECREMENT_COUNTER':
+          if(state.count < 0){
+            return {count: 0}
+          }
           return { count: state.count - action.payload };  
       default:
         return state;
