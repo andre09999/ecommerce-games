@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+.box{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 15px;
+width: 200px;
+padding: 15px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box:hover{
+  background-color: rgb(117, 183, 241);
+  border-radius: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #323159;
+}
+
+.cards{
+  background-color: transparent;
+}
+.nameGame{
+  text-align: center;
+  color: #FCB63D;
+}
+header{
+  display: flex;
+  align-items: center;
+  color: #dbd8a2;
+  justify-content: space-around;
+  border-bottom: 1px solid blue;
+  background-color: #4b3e4dad;
+}
+
+.cart{
+  text-decoration: none;
+  background-color: rgb(252, 182, 61); 
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid white;
+  color: black ;
+  font-weight: bolder;
+}
+
+.cart:hover{
+  background-color: #869791;  
+border: 1px solid #1e8c93;
+border-radius: 15px;
+color: white;
+}
+
+.boxcart{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.logo{
+  width: 75px;
+}
+
+footer{
+  color: #dbd8a2;
+  border-top: 1px solid blue;
+  text-align: center;
+  padding: 30px;
+  background-color: #4b3e4dad;
+}
+
+.linkCreator{
+text-decoration: none;
+color: #dbd8a2;
+}
+
+.linkCreator:hover{
+color: blue;
+}
+
+
+.but{
+cursor: pointer;
+background-color: white;
+border-radius: 10px;
+padding: 10px;
+color: black;
+}
+
+.but:hover{
+background-color: #323159;
+color: #DBD8A2  ;
+}
+
+.App-cart{
+ display: flex;
+ flex-direction: column;
+ overflow-x: scroll;
+    overflow-x: hidden;
+    font-weight: bold;
+}
+
+.cartsnoner{
+  display: block;
+  position: absolute;
+  top: 97px;
+  left: 73%;
+  background-color: #4b3e4dad;
+  width: 350px;
+  height: auto;
+  border: 1px solid blue;
+  border-radius: 15px;
+}
+
+.cartsnone{
+  display: none;
+
+}
+
+.container{
+  text-align: center;
+  text-decoration: none;
+  background-color: #4b3e4dad;
+}
+
+.linkHome{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.linkHome:hover{
+  text-decoration: underline;
+}
+
+.inf-carr{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.butt{
+  background-color: rgb(252, 182, 61);
+  border: 0;
+  padding: 5px;
+  border-radius: 100px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.butt:hover{
+  background-color: #869791;  
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 600px)
+{
+  .cartsnoner{
+    display: block;
+    position: absolute;
+    top: 97px;
+    left: 2%;
+    background-color: #4b3e4d;
+    width: 95vw;
+    height: auto;
+    border: 1px solid blue;
+    border-radius: 15px;
   }
-  to {
-    transform: rotate(360deg);
+  .header-title{
+      font-size: 18px;
+  }
+  .cart{
+    padding: 3px;
   }
 }
