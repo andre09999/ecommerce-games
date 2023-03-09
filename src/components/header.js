@@ -20,8 +20,8 @@ class header extends React.Component {
     }
         return (
             <header>
-                <img className="logo" src="https://assets.toolzz.com.br/25202234/logo-instituicao/a1f866061c000e90d46459ebc0a3c8bd.png" alt="logo"></img>
-                <h1 className="header-title">Potência tech</h1>
+                <img className="logo" src="https://www.supera.com.br/wp-content/uploads/2020/11/nova-logo-supera-branca.svg" alt="logo"></img>
+                <h1 className="header-title">Supera Tecnologia</h1>
                
                 <button className="cart" onClick={()=> red()}>
                     <div className="boxcart">

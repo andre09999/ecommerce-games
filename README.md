@@ -38,7 +38,7 @@ git clone git@github.com:andre09999/ecommerce-games.git
  ###   Valores monetários  em Real brasileiro ,
  ###   O usuário poderá adicionar e remover ou alterar a quantidade de produtos do carrinho,
  ###   Renderização condicional
- ###   Design UX e layout baseado no site da Potência tech
+ ###   Design UX e layout feito com paleta de cores
 ### 
 
 ![preview do site](./src/images/preview.jpg)
