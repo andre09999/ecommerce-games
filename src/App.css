@@ -8,7 +8,7 @@ width: 200px;
 padding: 15px;
 }
 .box:hover{
-  background-color: rgb(117, 183, 241);
+  background-color: #FDD760;
   border-radius: 15px;
 }
 .App{
@@ -18,28 +18,68 @@ padding: 15px;
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #323159;
+  background-color: #F1F1F1;
+  width: 920px;
+  padding-left: 25%;
+  padding-bottom: 150px;
+}
+.value{
+  text-align: center;
+}
+.pagcompra{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  height: 80vh;
+  align-items: center;
+}
+.buts{
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+.label{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.inputs{
+  padding: 15px;
+  border-radius: 15px;
+  width: 300px;
+}
+.agradece{
+  text-align: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
 .cards{
   background-color: transparent;
+  mix-blend-mode: multiply;
 }
 .nameGame{
   text-align: center;
-  color: #FCB63D;
+  color: #25262C;
 }
 header{
   display: flex;
   align-items: center;
-  color: #dbd8a2;
+  color: #F1F1F1;
   justify-content: space-around;
-  border-bottom: 1px solid blue;
-  background-color: #4b3e4dad;
+  border-bottom: 1px solid #FDD760;
+  background-color: #25262C;
 }
-
+#root{
+  background-color: #F1F1F1;
+}
 .cart{
   text-decoration: none;
-  background-color: rgb(252, 182, 61); 
+  background-color: #FDD760; 
   border-radius: 15px;
   padding: 10px;
   border: 1px solid white;
@@ -49,7 +89,7 @@ header{
 
 .cart:hover{
   background-color: #869791;  
-border: 1px solid #1e8c93;
+border: 1px solid #FDD760;
 border-radius: 15px;
 color: white;
 }
@@ -66,16 +106,20 @@ color: white;
 }
 
 footer{
-  color: #dbd8a2;
-  border-top: 1px solid blue;
+  color: #F1F1F1;
   text-align: center;
-  padding: 30px;
-  background-color: #4b3e4dad;
+  padding: 10px;
+  border-bottom: 1px solid #FDD760;
+  background-color: #25262C;
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
 }
 
 .linkCreator{
 text-decoration: none;
-color: #dbd8a2;
+color: #F1F1F1;
 }
 
 .linkCreator:hover{

@@ -61,5 +61,12 @@
       "price": 115.8,
       "score": 290,
       "image": "horizon-zero-dawn.png"
+    },
+    {
+      "id": 503,
+      "name": "Fc24",
+      "price": 107.8,
+      "score": 350,
+      "image": "FC24.png"
     }
   ]

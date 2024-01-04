@@ -7,6 +7,11 @@ export const decre = (decrement = 1)   => ({
   type: 'DECREMENT_COUNTER',
   payload: decrement
 })
+
+export const finalizar = (final = 0)   => ({
+  type: 'final',
+  payload: final
+})
   
 export const limparClearn = (a) => ({
   type: 'clean1',

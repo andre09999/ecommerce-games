@@ -6,12 +6,14 @@ const INITIAL_STATE = {
     switch (action.type) {
       case 'INCREMENT_COUNTER':
         return { count: state.count + action.payload };
-        case 'DECREMENT_COUNTER':
-          if(state.count < 0){
+      case 'DECREMENT_COUNTER':
+          if(state.count <= 0){
             return {count: 0}
           }
           return { count: state.count - action.payload };  
-          case 'clean1':
+
+      case 'clean1':
+        
         return { count: 0 };
       default:
         return state;
